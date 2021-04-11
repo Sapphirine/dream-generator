@@ -24,6 +24,15 @@ git submodule init
 git submodule update
 ```
 
+### Initialize
+
+## Folder Structure
+- data: Folder used to keep temporary data and metadata. 
+- extern: All submodule repositories are here. 
+- models: Pre-trained CycleGAN models for running the image translation. 
+- results: The outputs from the algorithm.
+- scripts: All supporting scripts are here. 
+
 ## Acknowledgments
 - An overview and reference to the CycleGAN model can be found [here](https://junyanz.github.io/CycleGAN/).
 - The CycleGAN model repository can be found [here](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
