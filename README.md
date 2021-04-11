@@ -25,6 +25,7 @@ git submodule update
 ```
 
 ### Initialize
+Run the "initialize" script in the root and give the path to the short video clips
 
 ## Folder Structure
 - data: Folder used to keep temporary data and metadata. 
