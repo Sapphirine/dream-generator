@@ -1,6 +1,9 @@
+
+<img src="images/SideBySide.gif" align="right" width="280px"/>
+
 # Styled Video Generator
 The Styled Video Generator is a project that generates a video from a given set of short video clips. 
-The generator can also apply style translations to the video (e.g. painting-like videos). 
+The generator can also apply style translations to the video (e.g. painting-like videos).
 
 ## Prerequisites
 - A CUDA compatible GPU is highly recommended
