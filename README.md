@@ -8,7 +8,9 @@ The generator can also apply style translations to the video (e.g. painting-like
 ## Prerequisites
 - A CUDA compatible GPU is highly recommended
 - Python 3
-- Python packages [torch](https://pypi.org/project/torch/) | [torchvision](https://github.com/pytorch/vision) | [Pandas](https://pandas.pydata.org/) | [Pillow](https://python-pillow.org/) | [NumPy](https://numpy.org/)
+- Python packages [Torch](https://pypi.org/project/torch/) | [Torchvision](https://github.com/pytorch/vision) | 
+  [Pandas](https://pandas.pydata.org/) | [Pillow](https://python-pillow.org/) | [NumPy](https://numpy.org/) | 
+  [Decord](https://github.com/dmlc/decord) | [MoviePy](https://pypi.org/project/moviepy/)
 
 ## Getting Started
 ### Installation
@@ -28,7 +30,20 @@ git submodule update
 ```
 
 ### Initialize
-Run the "initialize" script in the root and give the path to the short video clips
+Run the "initialize.py" script in the root folder to generate the classification label record.  
+{path_to_the_video_dataset} is the path to the video dataset folder.
+```bash
+python initialize.py {path_to_the_video_dataset}
+```
+
+### Generate
+Run the "generate.py" script in the root folder to generate the translated output video.  
+{path_to_the_video_dataset} is the path to the video dataset folder.  
+{length_of_output_video_in_second} is the video length in second as an integer.  
+{video_frame_rate} is the frame rate per second as an integer
+```bash
+python generate.py {path_to_the_video_dataset} {length_of_output_video_in_second} {video_frame_rate}
+```
 
 ## Folder Structure
 - data: Folder used to keep temporary data and metadata. 

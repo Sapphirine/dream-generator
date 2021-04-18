@@ -132,3 +132,4 @@ dmypy.json
 /data/raw
 /data/translated
 /results
+/checkpoints/**/*.txt

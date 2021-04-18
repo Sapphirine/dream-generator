@@ -1,15 +1,15 @@
 import os
 import torch
+import sys
 import pandas as pd
 from scripts import processor
 from tqdm import tqdm, trange
 
-# get the directory to the video clips
-directory = input("Enter the path to the video clips: ")
-# check if the path exists
-isExist = os.path.exists(directory)
 
-if not isExist:
+# get the path to the dataset
+directory = sys.argv[1]
+
+if not os.path.exists(directory):
     print("File path does not exist")
 else:
     # configure the ResNet model for classifying the images
@@ -31,7 +31,7 @@ else:
     # start classifying the videos
     files = [i for i in os.listdir(directory) if i.endswith("mov")]
     # create a progress bar for tracking the progress
-    pbar = tqdm(total=len(files))
+    pbar = tqdm(total=len(files), ncols=80)
     # processing
     for count, file in enumerate(files):
         # process the videos
