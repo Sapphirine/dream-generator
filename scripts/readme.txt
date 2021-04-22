@@ -1,1 +1,0 @@
-This folder is used to keep all necessary scripts for the project. 

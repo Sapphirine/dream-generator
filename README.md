@@ -31,16 +31,16 @@ git submodule update
 
 ### Initialize
 Run the "initialize.py" script in the root folder to generate the classification label record.  
-{path_to_the_video_dataset} is the path to the video dataset folder.
+- {path_to_the_video_dataset} is the path to the video dataset folder.
 ```bash
 python initialize.py {path_to_the_video_dataset}
 ```
 
 ### Generate
 Run the "generate.py" script in the root folder to generate the translated output video.  
-{path_to_the_video_dataset} is the path to the video dataset folder.  
-{length_of_output_video_in_second} is the video length in second as an integer.  
-{video_frame_rate} is the frame rate per second as an integer
+- {path_to_the_video_dataset} is the path to the video dataset folder.  
+- {length_of_output_video_in_second} is the video length in second as an integer.  
+- {video_frame_rate} is the frame rate per second as an integer
 ```bash
 python generate.py {path_to_the_video_dataset} {length_of_output_video_in_second} {video_frame_rate}
 ```

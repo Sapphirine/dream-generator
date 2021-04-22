@@ -29,7 +29,7 @@ else:
                        'ave blue': []})
 
     # start classifying the videos
-    files = [i for i in os.listdir(directory) if i.endswith("mov")]
+    files = [i for i in os.listdir(directory) if i.endswith("mp4")]
     # create a progress bar for tracking the progress
     pbar = tqdm(total=len(files), ncols=80)
     # processing
@@ -38,7 +38,7 @@ else:
         path = directory + '/' + file
         proc.load_video(path)
         # get the top predictions
-        results = proc.classify_frames(skipping=10)
+        results = proc.classify_frames(skipping=60)
         # get the average RGB values
         ave_rgb = proc.get_average_rgb()
         # save to the data frame

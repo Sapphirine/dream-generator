@@ -1,1 +1,0 @@
-Folder used to keep temporary data and metadata. 
